@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoBright - Вопросы и сертификаты</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка с добавленным пунктом FAQ -->
+    <header class="sticky-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="EcoBright Logo">
+                    <div class="logo-text">ECO<span>BRIGHT</span></div>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="product.html">Продукция</a></li>
+                        <li><a href="reviews.html">Отзывы</a></li>
+                        <li><a href="faq.html" class="active">FAQ</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="faq-page">
+        <!-- Герой-секция -->
+        <section class="faq-hero">
+            <div class="container">
+                <h1>Частые <span>вопросы</span></h1>
+                <p>Ответы на самые популярные вопросы о лампах EcoBright</p>
+            </div>
+        </section>
+
+        <!-- Секция с вопросами -->
+        <section class="questions-section">
+            <div class="container">
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="faq">Вопросы</button>
+                    <button class="tab-btn" data-tab="certificates">Сертификаты</button>
+                </div>
+
+                <div class="tab-content active" id="faq">
+                    <div class="accordion">
+                        <!-- Вопрос 1 -->
+                        <div class="accordion-item">
+                            <button class="accordion-btn">
+                                <span>Как долго служат лампы EcoBright?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <p>До 30,000 часов (15 лет при использовании 6 часов в день). Это в 30 раз дольше, чем обычные лампы накаливания.</p>
+                            </div>
+                        </div>
+
+                        <!-- Вопрос 2 -->
+                        <div class="accordion-item">
+                            <button class="accordion-btn">
+                                <span>Подходят ли лампы для диммеров?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Да, но только модели с пометкой "Dimmable" (например, A60-D). Обычные модели не поддерживают регулировку яркости.</p>
+                            </div>
+                        </div>
+
+                        <!-- Вопрос 3 -->
+                        <div class="accordion-item">
+                            <button class="accordion-btn">
+                                <span>Можно ли использовать лампы на улице?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Да, модели с маркировкой IP54 (указано на упаковке) защищены от влаги и пыли и могут использоваться на улице.</p>
+                            </div>
+                        </div>
+
+                        <!-- Вопрос 4 -->
+                        <div class="accordion-item">
+                            <button class="accordion-btn">
+                                <span>Как утилизировать лампы EcoBright?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Мы принимаем старые лампы в пунктах сбора (адреса можно найти на нашем сайте). Также их можно сдать в специальные пункты приема электроники.</p>
+                            </div>
+                        </div>
+
+                        <!-- Вопрос 5 -->
+                        <div class="accordion-item">
+                            <button class="accordion-btn">
+                                <span>Почему EcoBright дороже китайских аналогов?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Наши лампы производятся в России с использованием качественных компонентов:
+                                <ul>
+                                    <li>Чипы Samsung/LG - стабильный световой поток</li>
+                                    <li>Полный цикл тестирования каждой партии</li>
+                                    <li>Гарантия 5 лет</li>
+                                    <li>Экологически безопасные материалы</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="certificates">
+                    <div class="certificates-grid">
+                        <!-- Сертификат 1 -->
+                        <div class="certificate-card">
+                            <div class="certificate-image">
+                                <img src="images/cert-iso.jpg" alt="Сертификат ISO 9001">
+                            </div>
+                            <h3>ISO 9001</h3>
+                            <p>Международный стандарт качества производства</p>
+                        </div>
+
+                        <!-- Награда 1 -->
+                        <div class="certificate-card">
+                            <div class="certificate-image">
+                                <img src="images/cert-award.jpg" alt="Премия ЭкоТех">
+                            </div>
+                            <h3>Победитель премии "ЭкоТех-2023"</h3>
+                            <p>Лучшее энергоэффективное решение</p>
+                        </div>
+
+                        <!-- Партнерство -->
+                        <div class="certificate-card">
+                            <div class="certificate-image">
+                                <img src="images/cert-partner.jpg" alt="Партнерская программа">
+                            </div>
+                            <h3>Партнер программы "Энергоэффективный город"</h3>
+                            <p>Официальный поставщик для муниципальных объектов</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- КДПВ -->
+        <section class="faq-cta">
+            <div class="container">
+                <div class="cta-box">
+                    <h2>Остались вопросы?</h2>
+                    <p>Наши специалисты готовы проконсультировать вас по любым вопросам</p>
+                    <a href="contacts.html" class="btn btn-primary">Связаться с нами</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo-white.png" alt="EcoBright Logo">
+                    <div class="logo-text">ECO<span>BRIGHT</span></div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Продукция</h4>
+                        <ul>
+                            <li><a href="product.html#a60">Стандартные лампы</a></li>
+                            <li><a href="product.html#br40">Точечные светильники</a></li>
+                            <li><a href="product.html#t8">Офисные решения</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Компания</h4>
+                        <ul>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Технологии</a></li>
+                            <li><a href="faq.html#certificates">Сертификаты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Контакты</h4>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i> Москва, ул. Светотехническая, 15</li>
+                            <li><i class="fas fa-envelope"></i> info@ecobright.ru</li>
+                            <li><i class="fas fa-phone"></i> 8-800-555-22-10</li>
+                            <li><i class="fas fa-clock"></i> Пн-Пт: 9:00-18:00</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 EcoBright. Все права защищены.</p>
+                <div class="footer-legal">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Условия использования</a>
+                    <li><a href="faq.html#certificates">Сертификаты</a></li>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/faq.js"></script>
+</body>
+</html>

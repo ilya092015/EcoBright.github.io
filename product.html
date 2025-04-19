@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoBright - Каталог продукции</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+    <!-- Шапка (как на главной) -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="EcoBright Logo">
+                    <div class="logo-text">ECO<span>BRIGHT</span></div>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="product.html" class="active">Продукция</a></li>
+                        <li><a href="reviews.html">Отзывы</a></li>
+                        <li><a href="faq.html" class="active">FAQ</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="product-page">
+        <section class="catalog-intro">
+            <div class="container">
+                <h1>Наша <span>Продукция</span></h1>
+                <p>Выберите идеальную лампу для вашего пространства</p>
+                
+                <div class="filter-controls">
+                    <div class="filter-group">
+                        <label for="type-filter">Тип:</label>
+                        <select id="type-filter">
+                            <option value="all">Все</option>
+                            <option value="a60">A60 (Стандарт)</option>
+                            <option value="br40">BR40 (Точечные)</option>
+                            <option value="t8">T8 (Офисные)</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="power-filter">Мощность:</label>
+                        <select id="power-filter">
+                            <option value="all">Все</option>
+                            <option value="10w">До 10W</option>
+                            <option value="15w">10-15W</option>
+                            <option value="20w">15W+</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-grid">
+            <div class="container">
+                <div class="products">
+                    <!-- Карточка продукта 1 -->
+                    <div class="product-card" data-type="a60" data-power="10w">
+                        <div class="product-image">
+                            <img src="images/lamp-a60.png" alt="Лампа A60">
+                            <div class="product-badge eco-badge">ECO</div>
+                        </div>
+                        <h3>EcoBright A60</h3>
+                        <div class="product-specs">
+                            <p><strong>Мощность:</strong> 10W (аналог 75W)</p>
+                            <p><strong>Световой поток:</strong> 800 лм</p>
+                            <p><strong>Цветовая температура:</strong> 2700K-6500K</p>
+                        </div>
+                        <button class="btn product-btn">Подробнее</button>
+                        <div class="product-details">
+                            <ul>
+                                <li>Гарантия 5 лет</li>
+                                <li>Экономия 85% энергии</li>
+                                <li>Без мерцания</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Карточка продукта 2 -->
+                    <div class="product-card" data-type="br40" data-power="15w">
+                        <div class="product-image">
+                            <img src="images/lamp-br40.png" alt="Лампа BR40">
+                            <div class="product-badge new-badge">NEW</div>
+                        </div>
+                        <h3>EcoBright BR40</h3>
+                        <div class="product-specs">
+                            <p><strong>Мощность:</strong> 12W (аналог 100W)</p>
+                            <p><strong>Световой поток:</strong> 1100 лм</p>
+                            <p><strong>Угол рассеивания:</strong> 120°</p>
+                        </div>
+                        <button class="btn product-btn">Подробнее</button>
+                        <div class="product-details">
+                            <ul>
+                                <li>Алюминиевый радиатор</li>
+                                <li>IP54 влагозащита</li>
+                                <li>Для точечных светильников</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Карточка продукта 3 -->
+                    <div class="product-card" data-type="t8" data-power="20w">
+                        <div class="product-image">
+                            <img src="images/lamp-t8.png" alt="Лампа T8">
+                        </div>
+                        <h3>EcoBright T8</h3>
+                        <div class="product-specs">
+                            <p><strong>Мощность:</strong> 18W (аналог 150W)</p>
+                            <p><strong>Световой поток:</strong> 1600 лм</p>
+                            <p><strong>Цветопередача:</strong> CRI >90</p>
+                        </div>
+                        <button class="btn product-btn">Подробнее</button>
+                        <div class="product-details">
+                            <ul>
+                                <li>Для офисов и магазинов</li>
+                                <li>Работает при 170-260V</li>
+                                <li>Срок службы 30,000 часов</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция сравнения -->
+        <section class="comparison">
+            <div class="container">
+                <h2>Сравнение <span>Моделей</span></h2>
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Характеристика</th>
+                                <th>A60</th>
+                                <th>BR40</th>
+                                <th>T8</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Мощность (W)</td>
+                                <td>10</td>
+                                <td>12</td>
+                                <td>18</td>
+                            </tr>
+                            <tr>
+                                <td>Эквивалент лампы накаливания</td>
+                                <td>75W</td>
+                                <td>100W</td>
+                                <td>150W</td>
+                            </tr>
+                            <tr>
+                                <td>Срок службы (часы)</td>
+                                <td>30,000</td>
+                                <td>30,000</td>
+                                <td>35,000</td>
+                            </tr>
+                            <tr>
+                                <td>Экономия энергии</td>
+                                <td>85%</td>
+                                <td>88%</td>
+                                <td>90%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал (как на главной) -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo-white.png" alt="EcoBright Logo">
+                    <div class="logo-text">ECO<span>BRIGHT</span></div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Продукция</h4>
+                        <ul>
+                            <li><a href="#">Стандартные лампы</a></li>
+                            <li><a href="#">Точечные светильники</a></li>
+                            <li><a href="#">Офисные решения</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Компания</h4>
+                        <ul>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Технологии</a></li>
+                            <li><a href="#">Сертификаты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Контакты</h4>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i> Новосибирск, ул. Промышленная 15, 3</li>
+                            <li><i class="fas fa-envelope"></i> EcoBright@mail.ru</li>
+                            <li><i class="fas fa-phone"></i> 8-800-555-22-10</li>
+                            <li><i class="fas fa-clock"></i> Пн-Пт: 9:00-18:00</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 EcoBright. Все права защищены.</p>
+                <li><a href="faq.html#certificates">Сертификаты</a></li>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/product.js"></script>
+</body>
+</html>
